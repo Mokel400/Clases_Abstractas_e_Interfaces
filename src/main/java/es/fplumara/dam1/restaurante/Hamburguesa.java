@@ -34,6 +34,6 @@ public class Hamburguesa extends ProductoMenu implements Personalizable{
 
     @Override
     String ticketLine() {
-        return "";
+        return "[HAMBURGUESA]" + getNombre() + "(carne: " + this.tipoCarne + ") | base: " + getPrecioBase() + "€ | extras: " + extras.size() + " | total: " + precioFinal() + " € ";
     }
 }
