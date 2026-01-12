@@ -20,5 +20,7 @@ public class Main {
         //Entradas VIP
         entradas.add(new EntradaVIP("0005", LocalDate.now(), 8.99, "Zona de impresionismo", 10));
         entradas.add(new EntradaVIP("0006", LocalDate.now(), 8.99, "Zona de cubismo", 5));
-    }
+
+        }
+
 }
