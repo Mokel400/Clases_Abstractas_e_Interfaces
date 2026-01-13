@@ -21,6 +21,10 @@ public class Postre extends ProductoMenu{
 
     @Override
     String ticketLine() {
-        return "";
+        if (esCasero) {
+            return "[POSTRE] " + getNombre() + " casero: SI | base: " + getPrecioBase() + "€ | total: " + precioFinal() + " €.";
+        } else {
+            return "[POSTRE] " + getNombre() + " casero: NO | base: " + getPrecioBase() + "€ | total: " + precioFinal() + " €.";
+        }
     }
 }

@@ -51,7 +51,12 @@ public class Ensalada extends ProductoMenu implements Personalizable, AptoPara{
 
     @Override
     String ticketLine() {
-        return "";
+        if (this.tamano.equals(tamanoEnsalada.GRANDE)){
+            return "[ENSALADA]" + getNombre() + "(tamaño: " + this.tamano + ") | base: " + getPrecioBase() + "€ | incremento por tamaño: 2€ | extras: " + extras.size() + " | total: " + precioFinal() + " € ";
+        } else {
+            return "[ENSALADA]" + getNombre() + "(tamaño: " + this.tamano + ") | base: " + getPrecioBase() + "€ | incremento por tamaño: 0€ | extras: " + extras.size() + " | total: " + precioFinal() + " € ";
+        }
+
     }
 
 
